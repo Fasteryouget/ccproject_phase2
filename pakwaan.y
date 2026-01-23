@@ -6,7 +6,7 @@ extern int yylex();
 extern int yyparse();
 extern FILE *yyin;
 
-/* This tells the parser that line_no exists in the lexer file */
+
 extern int line_no; 
 extern char* yytext;
 

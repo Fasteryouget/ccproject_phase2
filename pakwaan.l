@@ -1,6 +1,6 @@
 %{
 #include "y.tab.h"
-/* Define the variable here so it exists for the linker [cite: 1] */
+
 int line_no = 1; 
 %}
 
@@ -9,7 +9,7 @@ int line_no = 1;
 %%
 
 \n              { line_no++; }
-[ \t\r]+        { /* ignore whitespace */ }
+[ \t\r]+        {  }
 
 "PakaaiShuru"   { return PakaaiShuru; }
 "PuraHissa"     { return PuraHissa; }
